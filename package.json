@@ -34,6 +34,7 @@
     "@faker-js/faker": "^7.6.0",
     "@types/express": "^5.0.2",
     "@types/jest": "^29.2.6",
+    "@types/morgan": "^1.9.9",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "babel-plugin-module-resolver": "^5.0.0",
@@ -58,6 +59,7 @@
     "url": "https://github.com/setbytes/env-auth/issues"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "morgan": "^1.10.0",
     "socket.io": "^4.8.1"

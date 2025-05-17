@@ -1,7 +1,9 @@
 import express, { Request, Response } from "express";
+import cors from "cors";
 import { createServer } from "http";
 import { Server } from "socket.io";
 import morgan from "morgan";
+import { CorsMiddleware } from "@/app/middlewares/CorsMiddleware";
 
 // declarations
 const app = express();
@@ -9,6 +11,7 @@ const sessions = new Map<string, string>();
 
 // middleware
 app.use(morgan("dev"));
+app.use(cors(CorsMiddleware.apply));
 
 // socket
 const httpServer = createServer(app);
