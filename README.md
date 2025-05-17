@@ -22,4 +22,8 @@ await EnvAuth.builder()
   .uniqueToken(crypto.randomUUID())
   .url(env.GITHUB_ENV_REPOSITORY)
   .loader();
+
+// load from github to your environment
+console.log(process.env.STRIPE_CLIENT_ID);
+console.log(process.env.STRIPE_CLIENT_SECRET);
 ```
