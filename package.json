@@ -1,7 +1,7 @@
 {
   "name": "env-auth",
   "version": "1.0.0",
-  "description": "Load .env files remotely from GitHub",
+  "description": "Load environment variables (.env) from a private GitHub repository before starting your app. Useful for PaaS, CI/CD, or local development with centralized configs.",
   "author": {
     "name": "Lucas Lopes",
     "email": "lucass.code@gmail.com",
@@ -11,12 +11,15 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
-    "setbytes.com",
-    ".env",
-    "environment",
-    "lib",
-    "npm",
-    "auth"
+    "dotenv",
+    "github",
+    "env",
+    "cli",
+    "configuration",
+    "bootstrap",
+    "paas",
+    "ci",
+    "private-repo"
   ],
   "scripts": {
     "start": "node ./dist/app/server.js",
