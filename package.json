@@ -19,7 +19,7 @@
     "auth"
   ],
   "scripts": {
-    "start": "npm run test:unit",
+    "start": "node ./dist/app/server.js",
     "build": "rm -rf dist && tsc -p tsconfig-build.json --declaration && cp package.json README.md ./dist",
     "test:build": "rm -rf dist && npm run test:ci && tsc -p tsconfig-build.json --declaration && cp package.json README.md ./dist",
     "test": "jest --passWithNoTests --silent=false --noStackTrace=false --runInBand",
@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@faker-js/faker": "^7.6.0",
+    "@types/express": "^5.0.2",
     "@types/jest": "^29.2.6",
     "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
@@ -55,5 +56,10 @@
   },
   "bugs": {
     "url": "https://github.com/setbytes/env-auth/issues"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.8.1"
   }
 }
