@@ -8,3 +8,4 @@ jest.config.json
 jest-db.json
 src
 tests
+.env

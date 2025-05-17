@@ -1,1 +1,1 @@
-export * from "@/app/SetBytes";
+export * from "@/app/EnvAuth";

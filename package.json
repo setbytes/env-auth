@@ -1,6 +1,6 @@
 {
   "name": "env-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load environment variables (.env) from a private GitHub repository before starting your app. Useful for PaaS, CI/CD, or local development with centralized configs.",
   "author": {
     "name": "Lucas Lopes",
@@ -63,8 +63,11 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "morgan": "^1.10.0",
-    "socket.io": "^4.8.1"
+    "node-fetch": "^3.3.2",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
   }
 }
